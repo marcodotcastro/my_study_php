@@ -1,18 +1,27 @@
 {
-    "name": "marcodotcastro/my_study_php",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "MyStudyPhp\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Marco Castro",
-            "email": "marcodotcastro@gmail.com"
-        }
-    ],
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
+  "name": "marcodotcastro/my_study_php",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "MyStudyPhp\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MyStudyPhp\\Test\\": "test/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Marco Castro",
+      "email": "marcodotcastro@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-json": "*",
+    "ext-sqlite3": "*",
+    "phpunit/phpunit": "^9.5"
+  }
 }
